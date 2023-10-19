@@ -1,7 +1,9 @@
 asgiref==3.7.2
+cloudinary==1.36.0
 dj-database-url==2.1.0
 Django==4.2.6
 django-allauth==0.57.0
+gunicorn==21.2.0
 oauthlib==3.2.2
 psycopg2==2.9.9
 PyJWT==2.8.0
