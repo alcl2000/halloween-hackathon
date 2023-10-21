@@ -5,6 +5,8 @@ from rest_framework.response import Response
 from .models import Profile
 from .serializers import ProfileSerializer
 from app.permissions import IsOwnerOrReadOnly
+
+
 class ProfileList(APIView):
     """
     List all profiles
@@ -32,12 +34,14 @@ class ProfileDetail(APIView):
             return profile
         except Profile.DoesNotExist:
             raise Http404
+
     def get(self, request, pk):
         profile = self.get_object(pk)
         serializer = ProfileSerializer(
             profile, context={'request': request}
         )
         return Response(serializer.data)
+
     def put(self, request, pk):
         profile = self.get_object(pk)
         serializer = ProfileSerializer(
