@@ -23,4 +23,3 @@ class VoteDetail(generics.RetrieveDestroyAPIView):
     permission_classes = [IsOwnerOrReadOnly]
     serializer_class = VoteSerializer
     queryset = Vote.objects.all()
-0 comments on commit c3ba26a
