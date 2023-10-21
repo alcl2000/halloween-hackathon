@@ -45,6 +45,6 @@ class CostumeDetail(generics.RetrieveUpdateDestroyAPIView):
     """
     serializer_class = CostumeSerializer
     permission_classes = [IsOwnerOrReadOnly]
-     queryset = Costume.objects.annotate(
+    queryset = Costume.objects.annotate(
         votes_count=Count('votes', distinct=True),
     ).order_by('-created_at')

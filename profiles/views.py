@@ -10,7 +10,7 @@ class ProfileList(generics.ListAPIView):
     List all profiles.
     No create view as profile creation is handled by django signals.
     """
-     queryset = Profile.objects.annotate(
+    queryset = Profile.objects.annotate(
         costumes_count=Count('owner__costume', distinct=True),
     ).order_by('-created_at')
     serializer_class = ProfileSerializer
