@@ -16,6 +16,13 @@ import os
 if os.path.isfile('env.py'):
     import env
 
+CLOUDINARY_STORAGE = {
+    'CLOUDINARY_URL': os.environ.get('CLOURINARY_URL')
+}
+
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -29,7 +36,7 @@ SECRET_KEY = str(os.environ.get('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-alcl2000-halloweenhacka-6fi2eamnocw.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['8000-miarasmusse-halloweenha-znhtakwxa0y.ws-eu105.gitpod.io']
 
 
 # Application definition
@@ -54,7 +61,8 @@ INSTALLED_APPS = [
     'dj_rest_auth.registration',
 
     'profiles',
-    'costumes'
+    'costumes',
+    'votes'
 ]
 
 SITE_ID = 1
@@ -136,7 +144,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
