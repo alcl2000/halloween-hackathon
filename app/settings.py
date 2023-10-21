@@ -62,7 +62,8 @@ INSTALLED_APPS = [
 
     'profiles',
     'costumes',
-    'votes'
+    'votes', 
+    'categories'
 ]
 
 SITE_ID = 1
