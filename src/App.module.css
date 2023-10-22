@@ -1,13 +1,20 @@
 .App {
     min-height: 100vh;
-    background-color: #f2f2f2;
-    color: #000;
-    font-family: "DM Sans", sans-serif;
+    background-color: #1b0721;
+    color: #F27B35;
   }
   
   * {
     box-sizing: border-box;
   }
+
+h1, h2 {
+  font-family: 'Creepster', sans-serif;
+}
+
+h3,h4, p {
+  font-family: 'Inter', sans-serif;
+}
 
   .Main {
     padding-top: 81px;
@@ -36,8 +43,8 @@
   }
 
   .NavBar {
-    background-color: #ffffff;
-    border: 1px solid #dadadf;
+    background-color: #241720;
+    border: 1px solid #241720;
   }
   
   .NavLink {
@@ -45,11 +52,11 @@
   }
   
   .Active i {
-    color: #2142b2;
+    color: #ff9d00;
   }
 
   .Content {
-    background-color: #ffffff;
+    background-color: #241720;
     padding: 10px;
     border-radius: 2px;
     border: 1px solid #dadadf;
