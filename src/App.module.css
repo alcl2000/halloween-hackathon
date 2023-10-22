@@ -104,6 +104,7 @@ h3,h4, p {
   @media screen and (min-width: 320px) {
     h1 {
       font-size: 48px;
+      text-shadow: 1.5px 1.5px var(--secondary);
     }
     h2 {
       font-size: 30px;
@@ -133,6 +134,7 @@ h3,h4, p {
       background-color: var(--secondary);
       color: var(--background);
       padding: 10px 20px;
+      border: 1px solid var(--secondary);
       border-radius: 8px;
       margin: 16px 8px 0 8px;
     }
@@ -142,6 +144,7 @@ h3,h4, p {
       color: var(--secondary);
       border: 1px solid var(--secondary);
       padding: 10px 20px;
+      border: 1px solid var(--secondary);
       border-radius: 8px;
       margin: 0 auto;
     }
@@ -150,7 +153,7 @@ h3,h4, p {
   /* Tablet */
   @media screen and (min-width: 768px) {
     h1 {
-      font-size: 60px;
+      font-size: 80px;
     }
     h2 {
       font-size: 40px;
@@ -174,12 +177,35 @@ h3,h4, p {
       justify-content: left;
     }
 
+    
+    .Button1, .Button2 {
+      transition: .5s ease;
+    }
+
+    .Button1:hover {
+      background-color: var(--background);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      box-shadow: 0 0 5px var(--primary);
+    }
+
+    .Button2:hover {
+      background: var(--background);
+      color: var(--secondary);
+      border: 1px solid #ffffff;
+      text-shadow: 0 0 5px var(--primary),
+                  0 0 10px var(--primary),
+                  0 0 20px var(--primary);;
+      box-shadow: 0 0 5px var(--primary),
+                  0 0 10px var(--primary),
+                  0 0 20px var(--primary);
+    }
   }
 
   /* Desktop */
   @media screen and (min-width: 1024px) {
     h1 {
-      font-size: 200px;
+      font-size: 120px;
     }
     h2 {
       font-size: 60px;
@@ -195,5 +221,20 @@ h3,h4, p {
     }
     button {
       font-size: 20px;
+    }
+
+    .Button2 {
+      background-color: transparent;
+      color: var(--secondary);
+      border: 1px solid var(--secondary);
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 0 auto;
+      transition: .5s ease;
+    }
+
+    .Button2:hover, :focus {
+      background: var(--secondary);
+      border: 1px solid var(--primary);
     }
   }
