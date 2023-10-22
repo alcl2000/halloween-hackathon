@@ -120,6 +120,8 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
         rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
     ]
 
+CSRF_COOKIE_SAMESITE = None
+
 """
 Enable sending cookies in cross-origin requests so 
 that users can get authentication functionality
