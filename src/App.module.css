@@ -1,7 +1,10 @@
+@import './styles/fonts.css';
+@import './styles/globalcolors.css';
+
 .App {
     min-height: 100vh;
-    background-color: #1b0721;
-    color: #F27B35;
+    background-color: var(--background);
+    color: var(--primary);
   }
   
   * {
@@ -20,39 +23,39 @@ h3,h4, p {
     padding-top: 81px;
   }
   
-  /* a {
-    color: #7a7a7a;
-  } */
+  a {
+    color: var(--secondary);
+  }
   
   a:hover {
     text-decoration: none;
-    color: #000;
+    color: var(--primary);
   }
   
   i {
     vertical-align: middle;
-    color: #acacac;
+    color: var(--secondary);
     font-size: 25px;
     padding: 8px;
   }
   
-  i:hover {
-    /* color: #008080; */
+  span:hover {
+    color: var(--primary);
     cursor: pointer;
     transition: color ease-in-out 0.2s;
   }
 
   .NavBar {
-    background-color: #241720;
-    border: 1px solid #241720;
+    background-color: var(--background);
+    border: 1px solid var(--background);
   }
-  
+
   .NavLink {
     padding: 5px;
   }
-  
-  .Active i {
-    color: #ff9d00;
+
+  .Active span, .Active i {
+    color: var(--primary);
   }
 
   .Content {
@@ -95,4 +98,70 @@ h3,h4, p {
   }
   *::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+
+  /* Mobile */
+  @media screen and (min-width: 320px) {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+    button {
+      font-size: 16px;
+    }
+  }
+
+  /* Tablet */
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 14px;
+    }
+    button {
+      font-size: 18px;
+    }
+  }
+
+  /* Desktop */
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 80px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+    h3 {
+      font-size: 40px;
+    }
+    h4 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+    button {
+      font-size: 20px;
+    }
   }
