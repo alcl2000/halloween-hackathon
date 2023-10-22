@@ -40,7 +40,7 @@ const Costume = (props) => {
     }
   };
 
-  const handleUnvote = async () => {
+  const handleUnVote = async () => {
     try {
       await axiosRes.delete(`/votes/${vote_id}/`);
       setCostumes((prevCostumes) => ({
@@ -101,10 +101,6 @@ const Costume = (props) => {
             </OverlayTrigger>
           )}
           {votes_count}
-          <Link to={`/costumes/${id}`}>
-            <i className="far fa-comments" />
-          </Link>
-          {comments_count}
         </div>
       </Card.Body>
     </Card>
