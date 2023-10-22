@@ -8,6 +8,10 @@
   * {
     box-sizing: border-box;
   }
+
+  .Main {
+    padding-top: 81px;
+  }
   
   /* a {
     color: #7a7a7a;
@@ -29,4 +33,17 @@
     /* color: #008080; */
     cursor: pointer;
     transition: color ease-in-out 0.2s;
+  }
+
+  .NavBar {
+    background-color: #ffffff;
+    border: 1px solid #dadadf;
+  }
+  
+  .NavLink {
+    padding: 5px;
+  }
+  
+  .Active i {
+    color: #2142b2;
   }
