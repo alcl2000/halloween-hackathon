@@ -46,16 +46,28 @@ const SignUpForm = () => {
   };
 
   const [selectedFile, setSelectedFile] = useState(null);
+  const [fileURL, setFileURL] = useState(null);  // Defining setFileURL and fileURL here
 
   const handleFileInput = (event) => {
-    setSelectedFile(event.target.files[0]);
+    const file = event.target.files[0];
+    setSelectedFile(file);
+    if (file) {
+      setFileURL(URL.createObjectURL(file));  // Create a URL for the selected file
+    }
   };
+
 
   return (
     <Row className={styles.Row}>
       <Col className="my-auto py-2 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
         <h1 className={styles.Header}>Create Account</h1> {/* New H1 element */}
+
+          {fileURL && (
+            <div className="text-center mb-4">
+              <Image src={fileURL} alt="Uploaded" thumbnail />
+            </div>
+          )}
           
           <table className="mb-4" style={{ width: '100%', textAlign: 'center' }}>
             <tr>
