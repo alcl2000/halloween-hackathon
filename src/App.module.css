@@ -172,9 +172,7 @@ h3,h4, p {
     }
 
     .LandingPageHeader {
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
+      text-align: left;
     }
 
     
@@ -223,18 +221,8 @@ h3,h4, p {
       font-size: 20px;
     }
 
-    .Button2 {
-      background-color: transparent;
-      color: var(--secondary);
-      border: 1px solid var(--secondary);
-      padding: 10px 20px;
-      border-radius: 8px;
-      margin: 0 auto;
-      transition: .5s ease;
+    .LandingPageHeader {
+      text-align: center;
     }
 
-    .Button2:hover, :focus {
-      background: var(--secondary);
-      border: 1px solid var(--primary);
-    }
   }
