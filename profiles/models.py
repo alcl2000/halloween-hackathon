@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models.signals import post_save
 from django.contrib.auth.models import User
+from favorites.models import Favorite
 
 
 class Profile(models.Model):
@@ -9,6 +10,7 @@ class Profile(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=255, blank=True)
     content = models.TextField(blank=True)
+    favorites = models.ManyToManyField(Favorite)
     image = models.ImageField(
         upload_to='images/', default='../default-pic_ls0v0g.png'
     )
