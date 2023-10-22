@@ -36,7 +36,26 @@ The problem statement for this project was that there was no clean website to ex
 
 The target audience were 16-25 year olds who were looking for a fun and easy way to share their Halloween costumes with their friends and family.
 
-They enjoyed Halloween Parties, Horror Franchises and Socialising with their friends. Their pain points would potentially be outdated user interfaces, slow loading times or the app being too similar to other social media platforms.
+- They enjoy Halloween Parties, Horror Franchises and Socialising with their friends. 
+- Their pain points would potentially be outdated user interfaces, slow loading times or the app being too similar to other social media platforms.
+
+**Target Audience Profile 1: Mia (pictured in heading)**
+
+<i>
+
+Age: 18
+
+Appearance: Mia, has a vibrant energy about her. Her smartphone, adorned with a horror-themed case, is always in hand, capturing moments or chatting with friends.
+
+Personality:
+
+- Creative Flair: Mia has a knack for arts and crafts. She often creates her own horror-themed jewelry and accessories.
+- Horror Series Fanatic: While she loves horror movies, Mia is especially fond of horror TV series. She often hosts binge-watching sessions with her friends.
+- Life of the Party: Social and outgoing, Mia is often the center of attention without even trying. She loves dancing, singing, and making everyone around her laugh.
+- Halloween Lover: Every year, Mia and her friends embark on a project to create a haunted house experience for the neighborhood kids. Her creativity truly shines during this season.
+- Hobbies: Mia loves DIY projects, especially those related to horror themes. She also enjoys reading horror novels, attending live horror escape rooms, and exploring horror-themed cafes and bars.
+
+</i>
 
 ### **➡️ Benefits**
 
