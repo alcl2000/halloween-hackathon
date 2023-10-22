@@ -11,8 +11,10 @@ import Asset from "../../components/Asset";
 
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
+import { useRedirect } from "../../hooks/useRedirect";
 
 function CostumeCreateForm() {
+  useRedirect("loggedOut");
   const [errors, setErrors] = useState({});
 
   const [costumeData, setCostumeData] = useState({
