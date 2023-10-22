@@ -45,6 +45,12 @@ const SignUpForm = () => {
     }
   };
 
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleFileInput = (event) => {
+    setSelectedFile(event.target.files[0]);
+  };
+
   return (
     <Row className={styles.Row}>
       <Col className="my-auto py-2 p-md-2" md={6}>
@@ -57,7 +63,8 @@ const SignUpForm = () => {
                 <div>
                   <i className="fa fa-upload" aria-hidden="true"></i>
                   <br />
-                  <button>Upload Picture</button>
+                  <input type="file" id="fileInput" onChange={handleFileInput} style={{display: 'none'}} />
+                  <label htmlFor="fileInput" className={btnStyles.uploadButton}>Upload Picture</label>
                 </div>
               </td>
               <td>
@@ -158,5 +165,7 @@ const SignUpForm = () => {
     </Row>
   );
 };
+
+
 
 export default SignUpForm;
