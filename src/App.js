@@ -9,6 +9,7 @@ import CostumeCreateForm from "./pages/costumes/CostumeCreateForm";
 import LandingPage from "./pages/home/LandingPage";
 import CostumesPage from "./pages/costumes/CostumesPage";
 import { useCurrentUser } from "./contexts/CurrentUserContext";
+import ProfilePage from "./pages/profiles/ProfilePage";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -40,6 +41,7 @@ function App() {
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/costumes/create" render={() => <CostumeCreateForm />} />
+          <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
           <Route render={() => <p>Page not found!</p>} />
         </Switch>
       </Container>
