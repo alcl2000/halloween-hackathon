@@ -39,7 +39,7 @@ h3,h4, p {
     padding: 8px;
   }
   
-  span:hover {
+  i:hover {
     color: var(--primary);
     cursor: pointer;
     transition: color ease-in-out 0.2s;
@@ -103,13 +103,14 @@ h3,h4, p {
   /* Mobile */
   @media screen and (min-width: 320px) {
     h1 {
-      font-size: 40px;
+      font-size: 48px;
     }
     h2 {
       font-size: 30px;
     }
     h3 {
       font-size: 20px;
+      padding: 0 0 16px 0;
     }
     h4 {
       font-size: 18px;
@@ -119,6 +120,30 @@ h3,h4, p {
     }
     button {
       font-size: 16px;
+      font-weight: bold;
+    }
+    
+    .LandingPageHeader {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .Button1 {
+      background-color: var(--secondary);
+      color: var(--background);
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 16px 8px 0 8px;
+    }
+
+    .Button2 {
+      background-color: transparent;
+      color: var(--secondary);
+      border: 1px solid var(--secondary);
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 0 auto;
     }
   }
 
@@ -142,12 +167,19 @@ h3,h4, p {
     button {
       font-size: 18px;
     }
+
+    .LandingPageHeader {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+    }
+
   }
 
   /* Desktop */
   @media screen and (min-width: 1024px) {
     h1 {
-      font-size: 80px;
+      font-size: 200px;
     }
     h2 {
       font-size: 60px;
