@@ -18,12 +18,19 @@ The design of the website was inspired by the Halloween theme. The website has a
 
 ### 🎃 Project fits theme of Halloween
 
+The project fits the theme of Halloween, with the website having a dark theme with orange and purple accents. Motifs of classic Halloween icons such as gravestones, haunted houses tattered scrolls feature throughout the project.
+
 ### 🎃 Responsive and accessible for different screen sizes
+
+The website is responsive and accessible for all mainstream screen sizes. The website was tested on different screen sizes and devices, such as mobile, tablet and desktop. The website was also tested on different browsers, such as Chrome, Firefox and Safari.
 
 ### 🎃 Project is well planned using Github Projects
 
+The project board was used to plan the project. The project board was used to create issues and assign them to team members. The project board was also used to track the progress of the project. The project board can be found [here](https://github.com/users/alcl2000/projects/5)
+
 ### 🎃 Overall project focus is realistic and has a sense of completeness
 
+Throughout the project we focused on Costume Sharing App that would be useful for the target audience.
 
 # ABOUT SUBMISSION
 ## Intro
@@ -100,6 +107,8 @@ As a returning user, I want to be able to check my **favourites** and **save** c
 
 ### **➡️ Benefits**
 
+The benefits of this project are that users can favourite their Halloween costumes and share them with their friends and family. The website is also responsive and accessible for different screen sizes.
+
 ## Tech
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
@@ -112,3 +121,9 @@ In the tech section, we provide information about the technology stack, dependen
 
 ## Credits
 In the credits section, we provide information about the sources used
+
+Team Members:
+- Amy (scrum master)
+- Laura (designer)
+- Mia (lead developer)
+- Laurie (developer)
