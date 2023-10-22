@@ -5,18 +5,18 @@ import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
 
+import default1 from "../../assets/default1.png";
+import default2 from "../../assets/default2.png";
+import default3 from "../../assets/default3.png";
+import default4 from "../../assets/default4.png";
+
 import {
-  Form,
-  Button,
-  Image,
-  Col,
-  Row,
-  Container,
-  Alert,
-} from "react-bootstrap";
+  Form, Button, Image, Col, Row, Container, Alert } from "react-bootstrap";
 import axios from "axios";
+import { useRedirect } from "../../hooks/useRedirect";
 
 const SignUpForm = () => {
+  useRedirect("loggedIn");
   const [signUpData, setSignUpData] = useState({
     username: "",
     password1: "",
@@ -49,6 +49,38 @@ const SignUpForm = () => {
     <Row className={styles.Row}>
       <Col className="my-auto py-2 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
+        <h1 className={styles.Header}>Create Account</h1> {/* New H1 element */}
+          
+          <table className="mb-4" style={{ width: '100%', textAlign: 'center' }}>
+            <tr>
+              <td>
+                <div>
+                  <i className="fa fa-upload" aria-hidden="true"></i>
+                  <br />
+                  <button>Upload Picture</button>
+                </div>
+              </td>
+              <td>
+                <p>or</p>
+              </td>
+              <td>
+                <div>
+                  <table style={{ margin: 'auto' }}> {/* New table for 2x2 image layout */}
+                      <tr>
+                        <td><img src={default1} alt="Default 1" width={100}/></td>
+                        <td><img src={default2} alt="Default 2" width={100}/></td>
+                      </tr>
+                      <tr>
+                          <td><img src={default3} alt="Default 3" width={100}/></td>
+                          <td><img src={default4} alt="Default 4" width={100}/></td>
+                      </tr>
+                  </table>
+                  <p>Default Images</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+
           <h1 className={styles.Header}>sign up</h1>
 
           <Form onSubmit={handleSubmit}>
