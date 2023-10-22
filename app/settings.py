@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import re
+import dj_database_url
 
 if os.path.isfile('env.py'):
     import env
@@ -34,9 +36,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = str(os.environ.get('SECRET_KEY'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEV' in os.environ
+# DEBUG = True
 
-ALLOWED_HOSTS = ['8000-miarasmusse-halloweenha-znhtakwxa0y.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['localhost', '8000-miarasmusse-halloweenha-znhtakwxa0y.ws-eu105.gitpod.io']
 
 
 # Application definition
@@ -102,6 +105,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',
+    'allauth.account.middleware.AuthenticationMiddleware'
 ]
 
 ROOT_URLCONF = 'app.urls'
