@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Creepster';
+  src: url('./typefaces/Creepster-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./typefaces/Inter.ttf') format('truetype');
+}
