@@ -6,6 +6,7 @@ import "./api/axiosDefaults";
 import SignUpForm from "./pages/auth/SignUpForm";
 import SignInForm from "./pages/auth/SignInForm";
 import CostumeCreateForm from "./pages/costumes/CostumeCreateForm";
+import LandingPage from "./pages/home/LandingPage";
 import CostumesPage from "./pages/costumes/CostumesPage";
 import { useCurrentUser } from "./contexts/CurrentUserContext";
 
@@ -18,6 +19,7 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
+          <Route exact path="/" render={() => <LandingPage />} />
           <Route
             exact
             path="/"
