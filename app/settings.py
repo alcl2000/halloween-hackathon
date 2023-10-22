@@ -39,7 +39,7 @@ SECRET_KEY = str(os.environ.get('SECRET_KEY'))
 # DEBUG = 'DEV' in os.environ
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '8000-miarasmusse-halloweenha-znhtakwxa0y.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['localhost', '8000-miarasmusse-halloweenha-olj4n68iqj3.ws-eu105.gitpod.io']
 
 # Application definition
 
@@ -64,7 +64,8 @@ INSTALLED_APPS = [
 
     'profiles',
     'costumes',
-    'votes'
+    'votes',
+    'favorites',
 ]
 
 SITE_ID = 1
