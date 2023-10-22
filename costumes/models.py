@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from categories.models import Categories
 
 
 class Costume(models.Model):
@@ -33,6 +34,9 @@ class Costume(models.Model):
     )
     image_filter = models.CharField(
         max_length=32, choices=image_filter_choices, default='normal'
+    )
+    categories = models.ManyToManyField(
+        to=Categories, related_name='costumes', blank=True
     )
 
     class Meta:
