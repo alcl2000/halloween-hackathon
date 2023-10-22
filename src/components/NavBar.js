@@ -27,7 +27,7 @@ const NavBar = () => {
     <NavLink
       className={styles.NavLink}
       activeClassName={styles.Active}
-      to="/posts/create"
+      to="/costumes/create"
     >
       <i className="far fa-plus-square"></i>Add post
     </NavLink>
@@ -77,9 +77,14 @@ const NavBar = () => {
       </NavLink>
     </>
   );
+
   return (
-    <Navbar expanded={expanded} className={styles.NavBar}
-    expand="md" fixed="top">
+    <Navbar
+      expanded={expanded}
+      className={styles.NavBar}
+      expand="md"
+      fixed="top"
+    >
       <Container>
         <NavLink to="/">
           <Navbar.Brand>
@@ -90,7 +95,7 @@ const NavBar = () => {
         <Navbar.Toggle
           ref={ref}
           onClick={() => setExpanded(!expanded)}
-          aria-controls="basic-navbar-nav" 
+          aria-controls="basic-navbar-nav"
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-left">
@@ -102,6 +107,7 @@ const NavBar = () => {
             >
               <i className="fas fa-home"></i>Home
             </NavLink>
+
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
         </Navbar.Collapse>
