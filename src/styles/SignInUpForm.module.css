@@ -1,5 +1,3 @@
-@import './styles/globalcolors.css';
-
 .Row {
     height: calc(100vh - 81px);
   }
