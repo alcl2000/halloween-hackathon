@@ -1,10 +1,49 @@
 {
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "axios": "^1.5.1",
-    "bootstrap": "^4.6.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.4",
+    "bootstrap": "^4.6.0",
+    "jwt-decode": "^3.1.2",
     "react": "^17.0.2",
-    "react-bootstrap": "^2.9.1",
+    "react-bootstrap": "^1.6.7",
     "react-dom": "^17.0.2",
-    "reactstrap": "^9.2.0"
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "^4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "heroku-prebuild": "npm install -g serve",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "msw": "^0.35.0"
+  },
+  "engines": {
+    "node": "18.16.0",
+    "npm": "9.5.1"
   }
 }
