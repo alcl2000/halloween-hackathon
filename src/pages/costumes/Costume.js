@@ -4,6 +4,7 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { Card, Media, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
+import { axiosRes } from "../../api/axiosDefaults";
 
 const Costume = (props) => {
   const {
@@ -17,10 +18,43 @@ const Costume = (props) => {
     content,
     image,
     updated_at,
+    setCostumes,
   } = props;
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
+
+  const handleVote = async () => {
+    try {
+      const { data } = await axiosRes.costume("/votes/", { costume: id });
+      setCostumes((prevCostumes) => ({
+        ...prevCostumes,
+        results: prevCostumes.results.map((costume) => {
+          return costume.id === id
+            ? { ...costume, votes_count: costume.votes_count + 1, vote_id: data.id }
+            : costume;
+        }),
+      }));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const handleUnvote = async () => {
+    try {
+      await axiosRes.delete(`/votes/${vote_id}/`);
+      setCostumes((prevCostumes) => ({
+        ...prevCostumes,
+        results: prevCostumes.results.map((costume) => {
+          return costume.id === id
+            ? { ...costume, votes_count: costume.votes_count - 1, vote_id: null }
+            : costume;
+        }),
+      }));
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <Card className={styles.Costume}>
@@ -51,11 +85,11 @@ const Costume = (props) => {
               <i className="far fa-heart" />
             </OverlayTrigger>
           ) : vote_id ? (
-            <span onClick={() => {}}>
+            <span onClick={handleUnVote}>
               <i className={`fas fa-heart ${styles.Heart}`} />
             </span>
           ) : currentUser ? (
-            <span onClick={() => {}}>
+            <span onClick={handleVote}>
               <i className={`far fa-heart ${styles.HeartOutline}`} />
             </span>
           ) : (
