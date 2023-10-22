@@ -10,6 +10,8 @@ import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 
 import NoResults from "../../assets/no-results.png";
+import InfiniteScroll from "react-infinite-scroll-component";
+import { fetchMoreData } from "../../utils/utils";
 
 function CostumesPage({ message, filter = "" }) {
   const [costumes, setCostumes] = useState({ results: [] });
@@ -38,9 +40,15 @@ function CostumesPage({ message, filter = "" }) {
         {hasLoaded ? (
           <>
             {costumes.results.length ? (
-              costumes.results.map((costume) => (
+              <InfiniteScroll
+              children={costumes.results.map((costume) => (
                 <Costume key={costume.id} {...costume} setCostumes={setCostumes} />
-              ))
+              ))}
+              dataLength={costumes.results.length}
+              loader={<Asset spinner />}
+              hasMore={!!costumes.next}
+              next={() => fetchMoreData(costumes, setCostumes)}
+            />
             ) : (
               <Container className={appStyles.Content}>
                 <Asset src={NoResults} message={message} />
