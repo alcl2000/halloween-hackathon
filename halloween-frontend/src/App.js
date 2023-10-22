@@ -6,8 +6,10 @@ import "./api/axiosDefaults";
 import SignUpForm from "./pages/auth/SignUpForm";
 import SignInForm from "./pages/auth/SignInForm";
 import CostumeCreateForm from "./pages/costumes/CostumeCreateForm";
+import LandingPage from "./pages/home/LandingPage";
 import CostumesPage from "./pages/costumes/CostumesPage";
 import { useCurrentUser } from "./contexts/CurrentUserContext";
+import ProfilePage from "./pages/profiles/ProfilePage";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -18,6 +20,7 @@ function App() {
       <NavBar />
       <Container className={styles.Main}>
         <Switch>
+          <Route exact path="/" render={() => <LandingPage />} />
           <Route
             exact
             path="/"
@@ -38,6 +41,7 @@ function App() {
           <Route exact path="/signin" render={() => <SignInForm />} />
           <Route exact path="/signup" render={() => <SignUpForm />} />
           <Route exact path="/costumes/create" render={() => <CostumeCreateForm />} />
+          <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
           <Route render={() => <p>Page not found!</p>} />
         </Switch>
       </Container>
