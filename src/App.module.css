@@ -64,6 +64,13 @@ h5 {
     padding: 5px;
   }
 
+  .LogoName {
+    color: var(--primary);
+    font-family: 'Creepster', sans-serif;
+    position: relative;
+    top: 6px;
+  }
+
   .Active span, .Active i {
     color: var(--primary);
   }
@@ -138,7 +145,7 @@ h5 {
     }
 
     .LandingPageButtons {
-      display: flex;
+      width: 100%;
     }
 
     .Button1 {
