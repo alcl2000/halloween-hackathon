@@ -17,7 +17,7 @@ import { ProfileEditDropdown } from "../../components/MoreDropdown";
 
 import { fetchMoreData } from "../../utils/utils";
 import NoResults from "../../assets/no-results.png";
-
+import Costume from "../../components/Costume";
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
   const [profilePosts, setProfilePosts] = useState({ results: [] });
