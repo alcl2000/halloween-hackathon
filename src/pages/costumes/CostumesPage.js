@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import { Col, Row, Container, Form } from "react-bootstrap";
-
-import Costume from "./Costume";
 import Asset from "../../components/Asset";
+import Costume from "../../components/Costume";
 
 import appStyles from "../../App.module.css";
 import styles from "../../styles/CostumesPage.module.css";
