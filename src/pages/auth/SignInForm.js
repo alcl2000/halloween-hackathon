@@ -42,7 +42,7 @@ function SignInForm() {
   return (
     <Row className={styles.Row}>
       <Col className="my-auto p-0 p-md-2" md={6}>
-        <Container className={`${appStyles.Content} p-4 `}>
+        <Container className="justify-content-center align-items-center">
           <h2 className={styles.Header}>sign in</h2>
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="username">
@@ -90,7 +90,7 @@ function SignInForm() {
             ))}
           </Form>
         </Container>
-        <Container className={`mt-3 ${appStyles.Content}`}>
+        <Container className="justify-content-center align-items-center">
           <Link className={styles.Link} to="/signup">
             Don't have an account? <span>Sign up now!</span>
           </Link>

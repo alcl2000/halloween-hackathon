@@ -29,17 +29,16 @@
     color: var(--primary);
   } */
 
-  
-
   .Link {
     text-decoration: none;
     text-align: center;
     display: block;
     margin: auto;
+    padding: 8px;
   }
   
   .Link span {
-    color: #ff9254;
+    color: var(--primary);
   }
   
   .Container {
