@@ -1,16 +1,49 @@
+<div align="center">
+
+![](assets/media/issues/2023-10-23-13-50-57.png)
 
 <h1 align="center"><strong>🎃🎃🎃 Trick or Trend: A Halloween Costume sharing WebApp 🎃🎃🎃</strong>
 </h1>
 
 ![Languages](https://img.shields.io/badge/Languages-HTML5,_CSS3,_Javascript,_Python-orange?style=for-the-badge) ![Frameworks](https://img.shields.io/badge/Frameworks-Django,_React,_Bootstrap-orange?style=for-the-badge) ![Deployment](https://img.shields.io/badge/deployment-HEROKU-orange?style=for-the-badge)
 
+</div>
+
+- [SUBMISSION](#submission)
+  - [🌐 Deployment](#-deployment)
+  - [Criteria](#criteria)
+    - [🎃 Creative design that enhances user-experience](#-creative-design-that-enhances-user-experience)
+      - [🎃 Moodboard](#-moodboard)
+    - [🎃 Project fits theme of Halloween](#-project-fits-theme-of-halloween)
+    - [🎃 Responsive and accessible for different screen sizes](#-responsive-and-accessible-for-different-screen-sizes)
+    - [🎃 Project is well planned using Github Projects](#-project-is-well-planned-using-github-projects)
+    - [🎃 Overall project focus is realistic and has a sense of completeness](#-overall-project-focus-is-realistic-and-has-a-sense-of-completeness)
+- [ABOUT SUBMISSION](#about-submission)
+  - [Intro](#intro)
+  - [Goal](#goal)
+    - [➡️ Problem Statement](#️-problem-statement)
+    - [➡️ Objective(s)](#️-objectives)
+    - [➡️ Target Audience](#️-target-audience)
+    - [User Stories:](#user-stories)
+    - [**➡️ Benefits**](#️-benefits)
+  - [Tech](#tech)
+  - [Credits](#credits)
+
+
 # SUBMISSION
 ## 🌐 Deployment
+<b>
 
 The project is deployed and can be accessed at [https://trick-or-trend-c24bf997221b.herokuapp.com/](https://trick-or-trend-c24bf997221b.herokuapp.com/)
 
+</b>
+
+
+
+
 ## Criteria
 In this section, we will briefly discuss how our team addressed the applicable criteria:
+
 
 ### 🎃 Creative design that enhances user-experience
 
@@ -52,20 +85,21 @@ Throughout the project we focused on Costume Sharing App that would be useful fo
 
 # ABOUT SUBMISSION
 ## Intro
-One or two paragraphs providing an overview of our project
+
+Trick or Trend is a Halloween Costume sharing WebApp. The website allows users to share their Halloween costumes with their friends and family. The website is responsive and accessible for different screen sizes. The website has a clean and simple design, which is easy to navigate. The website has a dark theme with orange and purple accents.
 
 ## Goal
 The goal section provides a concise summary of the main objective or purpose of the project or software described in this README. It addresses the following aspects:
 
-### **➡️ Problem Statement**
+### ➡️ Problem Statement
 
 The problem statement for this project was that there was no clean website to exclusively share your Halloween costume with your friends and family. You would have to send them individually to each person, which would be time consuming and tedious. Or share on a generic social media platform, where it would get lost in the feed.
 
-### **➡️ Objective(s)**
+### ➡️ Objective(s)
 
 The objective of this project was to create a website where users could share their Halloween costumes with their friends and family. The website would be easy to use and have a clean Halloween user interface. The website would also be responsive and accessible for different screen sizes.
 
-### **➡️ Target Audience**
+### ➡️ Target Audience
 
 <img src="assets/media/targetaudience.png" width=500>
 
@@ -73,8 +107,10 @@ The target audience were 16-25 year olds who were looking for a fun and easy way
 
 - They enjoy Halloween Parties, Horror Franchises and Socialising with their friends. 
 - Their pain points would potentially be outdated user interfaces, slow loading times or the app being too similar to other social media platforms.
+- Two profiles were designed to evolve into the user stories and to design the website.
+- The user stories below reflect the target audience and their needs.
 
-**User Stories:**
+### User Stories:
 
 The user stories took into account the target audience and their pain points. The user stories were created using the Miro board.
 

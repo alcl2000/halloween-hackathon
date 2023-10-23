@@ -26,6 +26,7 @@
   .DefaultImage {
     padding: 1.5px;
     border-radius: 1em;
+    max-width: 100%;
   }
 
   /* .Header {
