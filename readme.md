@@ -7,6 +7,12 @@
 
 ![Languages](https://img.shields.io/badge/Languages-HTML5,_CSS3,_Javascript,_Python-orange?style=for-the-badge) ![Frameworks](https://img.shields.io/badge/Frameworks-Django,_React,_Bootstrap-orange?style=for-the-badge) ![Deployment](https://img.shields.io/badge/deployment-HEROKU-orange?style=for-the-badge)
 
+Are you ready to immerse yourself in the enchanting world of Halloween? Get ready to unleash your creativity, share your ghoulishly good costume ideas, and vote for your BOoO like never before. Trick or Trend App is here to make your Halloween season truly memorable. Will you get the most votes, and get your costume up on the podium? Save your favorite costumes and let the spookiest styles take center stage in your personal collection. May the spookiest style win the spotlight! ;)
+
+
+
+
+
 </div>
 
 - [SUBMISSION](#submission)
