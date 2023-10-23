@@ -46,6 +46,7 @@ const SignUpForm = () => {
   };
 
   const [selectedFile, setSelectedFile] = useState(null);
+
   const [fileURL, setFileURL] = useState(null);  // Defining setFileURL and fileURL here
 
   const handleFileInput = (event) => {
@@ -56,20 +57,22 @@ const SignUpForm = () => {
     }
   };
 
+  const handleDefaultImageClick = (defaultImageUrl) => {
+    setFileURL(defaultImageUrl);
+  };
 
   return (
     <Row className={styles.Row}>
       <Col className="my-auto py-2 p-md-2" md={6}>
-        <Container className={`${appStyles.Content} p-4 `}>
-        <h2 className={styles.Header}>Create Account</h2> {/* New H1 element */}
-
+        <Container className={`${appStyles.Content} p-4 ${appStyles.SignUpBox}`}>
+        <h1 className={styles.Header}>Create Account</h1> {/* New H1 element */}
           {fileURL && (
             <div className="text-center mb-4">
               <Image src={fileURL} alt="Uploaded" thumbnail />
             </div>
           )}
           
-          <table className="mb-4" style={{ width: '100%', textAlign: 'center' }}>
+          <table className={styles.Table} style={{ width: '100%', textAlign: 'center' }}>
             <tr>
               <td>
                 <div>
@@ -86,12 +89,12 @@ const SignUpForm = () => {
                 <div>
                   <table style={{ margin: 'auto' }}> {/* New table for 2x2 image layout */}
                       <tr>
-                        <td><img src={default1} alt="Default 1" width={100}/></td>
-                        <td><img src={default2} alt="Default 2" width={100}/></td>
+                        <td><img className={styles.DefaultImage} src={default1} alt="Default 1" width={100} onClick={() => handleDefaultImageClick(default1)}/></td>
+                        <td><img className={styles.DefaultImage} src={default2} alt="Default 2" width={100} onClick={() => handleDefaultImageClick(default2)}/></td>
                       </tr>
                       <tr>
-                          <td><img src={default3} alt="Default 3" width={100}/></td>
-                          <td><img src={default4} alt="Default 4" width={100}/></td>
+                          <td><img className={styles.DefaultImage} src={default3} alt="Default 3" width={100} onClick={() => handleDefaultImageClick(default3)}/></td>
+                          <td><img className={styles.DefaultImage} src={default4} alt="Default 4" width={100} onClick={() => handleDefaultImageClick(default4)}/></td>
                       </tr>
                   </table>
                   <p>Default Images</p>
