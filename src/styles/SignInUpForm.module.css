@@ -44,3 +44,8 @@
   .SignUpCol {
     height: 375px;
   }
+
+.DefaultImage {
+  border-radius: 25%;
+  padding: 0.3em;
+}

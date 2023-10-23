@@ -46,6 +46,7 @@ const SignUpForm = () => {
   };
 
   const [selectedFile, setSelectedFile] = useState(null);
+
   const [fileURL, setFileURL] = useState(null);  // Defining setFileURL and fileURL here
 
   const handleFileInput = (event) => {
@@ -56,6 +57,9 @@ const SignUpForm = () => {
     }
   };
 
+  const handleDefaultImageClick = (defaultImageUrl) => {
+    setFileURL(defaultImageUrl);
+  };
 
   return (
     <Row className={styles.Row}>
@@ -86,12 +90,12 @@ const SignUpForm = () => {
                 <div>
                   <table style={{ margin: 'auto' }}> {/* New table for 2x2 image layout */}
                       <tr>
-                        <td><img src={default1} alt="Default 1" width={100}/></td>
-                        <td><img src={default2} alt="Default 2" width={100}/></td>
+                        <td><img className={styles.DefaultImage} src={default1} alt="Default 1" width={100} onClick={() => handleDefaultImageClick(default1)}/></td>
+                        <td><img className={styles.DefaultImage} src={default2} alt="Default 2" width={100} onClick={() => handleDefaultImageClick(default2)}/></td>
                       </tr>
                       <tr>
-                          <td><img src={default3} alt="Default 3" width={100}/></td>
-                          <td><img src={default4} alt="Default 4" width={100}/></td>
+                          <td><img className={styles.DefaultImage} src={default3} alt="Default 3" width={100} onClick={() => handleDefaultImageClick(default3)}/></td>
+                          <td><img className={styles.DefaultImage} src={default4} alt="Default 4" width={100} onClick={() => handleDefaultImageClick(default4)}/></td>
                       </tr>
                   </table>
                   <p>Default Images</p>
