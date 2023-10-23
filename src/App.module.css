@@ -145,7 +145,7 @@ h5 {
     }
 
     .LandingPageButtons {
-      display: flex;
+      width: 100%;
     }
 
     .Button1 {
@@ -165,8 +165,6 @@ h5 {
       border: 1px solid var(--secondary);
       border-radius: 8px;
       margin: 16px 8px;
-      position: relative;
-      top: 16px;
     }
   }
 
@@ -222,10 +220,6 @@ h5 {
   
     .SignUpBox {
       width: 820px;
-    }
-
-    .LogoName {
-      
     }
 
   }
