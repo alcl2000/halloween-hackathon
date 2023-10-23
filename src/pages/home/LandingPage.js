@@ -9,7 +9,6 @@ const LandingPage = () => {
       <div className={styles.LandingPageLinks}>
         <a className={styles.Button1} href="/signup">Sign Up</a>
         <a className={styles.Button1} href="/signin">Sign In</a>
-        <br />
         <a className={styles.Button2} href="/feed">Start Voting</a>
       </div>
     </div>

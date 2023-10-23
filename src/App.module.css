@@ -64,6 +64,13 @@ h5 {
     padding: 5px;
   }
 
+  .LogoName {
+    color: var(--primary);
+    font-family: 'Creepster', sans-serif;
+    position: relative;
+    top: 6px;
+  }
+
   .Active span, .Active i {
     color: var(--primary);
   }
@@ -158,6 +165,8 @@ h5 {
       border: 1px solid var(--secondary);
       border-radius: 8px;
       margin: 16px 8px;
+      position: relative;
+      top: 16px;
     }
   }
 
@@ -213,6 +222,10 @@ h5 {
   
     .SignUpBox {
       width: 820px;
+    }
+
+    .LogoName {
+      
     }
 
   }
