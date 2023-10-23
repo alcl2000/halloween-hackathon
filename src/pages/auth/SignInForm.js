@@ -92,7 +92,7 @@ function SignInForm() {
         </Container>
         <Container className="justify-content-center align-items-center">
           <Link className={styles.Link} to="/signup">
-            Don't have an account? <span>Sign up now!</span>
+            <p className="text-center">Don't have an account? <span>Sign up now!</span></p>
           </Link>
         </Container>
       </Col>

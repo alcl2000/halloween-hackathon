@@ -18,6 +18,11 @@
     padding: 10px;
   }
   
+  Button:hover {
+    background-color: transparent;
+    
+  }
+
   /* .Header {
     font-style: normal;
     font-weight: bold;

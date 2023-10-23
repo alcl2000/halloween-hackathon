@@ -111,7 +111,7 @@ const NavBar = () => {
               exact
               className={styles.NavLink}
               activeClassName={styles.Active}
-              to="/"
+              to="/upload"
             >
               <span><i className="fas fa-portrait"></i>Upload Image</span>
             </NavLink>
