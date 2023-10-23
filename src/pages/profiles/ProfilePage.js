@@ -15,8 +15,6 @@ import {
 } from "../../contexts/ProfileDataContext";
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
 
-import InfiniteScroll from "react-infinite-scroll-component";
-import Costume from "../costumes/Costume";
 import { fetchMoreData } from "../../utils/utils";
 import NoResults from "../../assets/no-results.png";
 
