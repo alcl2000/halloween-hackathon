@@ -63,7 +63,7 @@ const SignUpForm = () => {
 
   return (
     <Row className={styles.Row}>
-      <Col className="my-auto py-2 p-md-2" md={6}>
+      <Col className="my-auto mx-auto py-2 p-md-2" md={12}>
         <Container className={`${appStyles.Content} p-4 ${appStyles.SignUpBox}`}>
         <h1 className={styles.Header}>Create Account</h1> {/* New H1 element */}
           {fileURL && (
@@ -72,7 +72,7 @@ const SignUpForm = () => {
             </div>
           )}
           
-          <table className={styles.Table} style={{ width: '100%', textAlign: 'center' }}>
+          <table className={`${styles.Table} my-auto mx-auto`} style={{ width: '100%', textAlign: 'center' }}>
             <tr>
               <td>
                 <div>
