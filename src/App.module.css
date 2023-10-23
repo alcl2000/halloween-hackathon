@@ -13,6 +13,7 @@
 
 h1, h2 {
   font-family: 'Creepster', sans-serif;
+  color: var(--primary);
 }
 
 h3,h4, p {
@@ -104,7 +105,6 @@ h3,h4, p {
   @media screen and (min-width: 320px) {
     h1 {
       font-size: 48px;
-      text-shadow: 1.5px 1.5px var(--secondary);
     }
     h2 {
       font-size: 30px;
@@ -125,8 +125,9 @@ h3,h4, p {
     }
     
     .LandingPageHeader {
-      display: block;
-      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
       text-align: center;
     }
 
@@ -136,7 +137,7 @@ h3,h4, p {
       padding: 10px 20px;
       border: 1px solid var(--secondary);
       border-radius: 8px;
-      margin: 16px 8px 0 8px;
+      margin: 16px 8px;
     }
 
     .Button2 {
@@ -146,7 +147,7 @@ h3,h4, p {
       padding: 10px 20px;
       border: 1px solid var(--secondary);
       border-radius: 8px;
-      margin: 0 auto;
+      margin: 16px 8px;
     }
   }
 
@@ -154,6 +155,7 @@ h3,h4, p {
   @media screen and (min-width: 768px) {
     h1 {
       font-size: 80px;
+      text-shadow: 1.5px 1.5px var(--secondary);
     }
     h2 {
       font-size: 40px;
@@ -189,7 +191,7 @@ h3,h4, p {
 
     .Button2:hover {
       background: var(--background);
-      color: var(--secondary);
+      color: #ffffff;
       border: 1px solid #ffffff;
       text-shadow: 0 0 5px var(--primary),
                   0 0 10px var(--primary),
