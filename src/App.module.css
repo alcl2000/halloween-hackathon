@@ -198,6 +198,11 @@ h3,h4, p {
                   0 0 10px var(--primary),
                   0 0 20px var(--primary);
     }
+  
+    .SignUpBox {
+      width: 820px;
+    }
+
   }
 
   /* Desktop */

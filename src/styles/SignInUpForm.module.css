@@ -14,12 +14,13 @@
   .Header {
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 26px;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #2142b2;
+    margin-bottom: 1em;
   }
   
   .Link {
@@ -48,4 +49,9 @@
 .DefaultImage {
   border-radius: 25%;
   padding: 0.3em;
+}
+
+.Table {
+  max-width: 520px;
+  margin: auto;
 }
