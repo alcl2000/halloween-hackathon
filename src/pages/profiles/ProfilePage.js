@@ -15,11 +15,10 @@ import {
 } from "../../contexts/ProfileDataContext";
 import { ProfileEditDropdown } from "../../components/MoreDropdown";
 
-import InfiniteScroll from "react-infinite-scroll-component";
-import Costume from "../costumes/Costume";
 import { fetchMoreData } from "../../utils/utils";
 import NoResults from "../../assets/no-results.png";
-
+import Costume from "../../components/Costume";
+import InfiniteScroll from "../../components/InfiniteScroll";
 function ProfilePage() {
   const [hasLoaded, setHasLoaded] = useState(false);
   const [profilePosts, setProfilePosts] = useState({ results: [] });
