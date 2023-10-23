@@ -65,6 +65,7 @@
   .SignUpCol {
     height: 375px;
   }
+  
   /* Mobile */
   @media screen and (min-width: 320px) {
     .Header {
@@ -78,5 +79,16 @@
       text-transform: uppercase;
       color: var(--primary);
     }
+
+  }
+
+   /* Tablet */
+   @media screen and (min-width: 768px) {
+
+
+   }
+
+     /* Desktop */
+  @media screen and (min-width: 1024px) {
 
   }

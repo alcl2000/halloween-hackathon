@@ -7,6 +7,7 @@ import useClickOutsideToggle from "../hooks/useClickOutsideToggle"
 
 import Avatar from "./Avatar";
 import axios from "axios";
+import logo from "../assets/logo.png"
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
@@ -81,15 +82,15 @@ const NavBar = () => {
   return (
     <Navbar
       expanded={expanded}
-      className={styles.NavBar}
+      className={`${styles.NavBar} md={12}`}
       expand="md"
       fixed="top"
     >
       <Container>
         <NavLink to="/">
           <Navbar.Brand>
-            {/* <img src={logo} alt="logo" height="45" /> */
-            <i className="fas fa-toilet-paper"></i>}
+            <img src={logo} alt="logo" height="45" />
+            
           </Navbar.Brand>
         </NavLink>
         {currentUser && addPostIcon}

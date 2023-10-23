@@ -7,11 +7,10 @@ const LandingPage = () => {
       <h1>Trick or Trend</h1>
       <h3>Vote for your BOoO!</h3>
       <div className={styles.LandingPageLinks}>
-        <div className={styles.Buttons}>
-          <a className={styles.Button1} href="/signup">Sign Up</a>
-          <a className={styles.Button1} href="/signin">Sign In</a>
-          <a className={styles.Button2} href="/feed">Start Voting</a>
-        </div>
+        <a className={styles.Button1} href="/signup">Sign Up</a>
+        <a className={styles.Button1} href="/signin">Sign In</a>
+        <br />
+        <a className={styles.Button2} href="/feed">Start Voting</a>
       </div>
     </div>
   )
