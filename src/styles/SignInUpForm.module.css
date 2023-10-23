@@ -23,6 +23,11 @@
     
   }
 
+  .DefaultImage {
+    padding: 1.5px;
+    border-radius: 1em;
+  }
+
   /* .Header {
     font-style: normal;
     font-weight: bold;
