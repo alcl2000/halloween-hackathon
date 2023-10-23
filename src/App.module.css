@@ -7,13 +7,17 @@
     color: var(--primary);
   }
   
-  * {
+ * {
     box-sizing: border-box;
   }
 
 h1, h2 {
   font-family: 'Creepster', sans-serif;
   color: var(--primary);
+}
+
+h1 {
+  text-shadow: 1.5px 1.5px var(--secondary);
 }
 
 h3,h4, p {
@@ -63,7 +67,7 @@ h3,h4, p {
     background-color: #241720;
     padding: 10px;
     border-radius: 2px;
-    border: 1px solid #dadadf;
+    border: 0px;
   }
   
   .FillerImage {
@@ -125,10 +129,11 @@ h3,h4, p {
     }
     
     .LandingPageHeader {
+      height: fit-content;
+    }
+
+    .LandingPageButtons {
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      text-align: center;
     }
 
     .Button1 {

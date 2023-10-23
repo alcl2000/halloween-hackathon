@@ -41,7 +41,7 @@ function SignInForm() {
   };
   return (
     <Row className={styles.Row}>
-      <Col className="my-auto p-0 p-md-2" md={6}>
+      <Col className="my-auto p-0 p-md-2 mx-auto" sm={12} md={6}>
         <Container className="justify-content-center align-items-center">
           <h2 className={styles.Header}>sign in</h2>
           <Form onSubmit={handleSubmit}>
@@ -92,14 +92,9 @@ function SignInForm() {
         </Container>
         <Container className="justify-content-center align-items-center">
           <Link className={styles.Link} to="/signup">
-            Don't have an account? <span>Sign up now!</span>
+            <p className="text-center">Don't have an account? <span>Sign up now!</span></p>
           </Link>
         </Container>
-      </Col>
-      <Col
-        md={6}
-        className={`my-auto d-none d-md-block p-2 ${styles.SignInCol}`}
-      >
       </Col>
     </Row>
   );
