@@ -39,7 +39,7 @@ h3,h4, p {
     padding: 8px;
   }
   
-  span:hover {
+  i:hover {
     color: var(--primary);
     cursor: pointer;
     transition: color ease-in-out 0.2s;
@@ -103,13 +103,15 @@ h3,h4, p {
   /* Mobile */
   @media screen and (min-width: 320px) {
     h1 {
-      font-size: 40px;
+      font-size: 48px;
+      text-shadow: 1.5px 1.5px var(--secondary);
     }
     h2 {
       font-size: 30px;
     }
     h3 {
       font-size: 20px;
+      padding: 0 0 16px 0;
     }
     h4 {
       font-size: 18px;
@@ -119,13 +121,39 @@ h3,h4, p {
     }
     button {
       font-size: 16px;
+      font-weight: bold;
+    }
+    
+    .LandingPageHeader {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .Button1 {
+      background-color: var(--secondary);
+      color: var(--background);
+      padding: 10px 20px;
+      border: 1px solid var(--secondary);
+      border-radius: 8px;
+      margin: 16px 8px 0 8px;
+    }
+
+    .Button2 {
+      background-color: transparent;
+      color: var(--secondary);
+      border: 1px solid var(--secondary);
+      padding: 10px 20px;
+      border: 1px solid var(--secondary);
+      border-radius: 8px;
+      margin: 0 auto;
     }
   }
 
   /* Tablet */
   @media screen and (min-width: 768px) {
     h1 {
-      font-size: 60px;
+      font-size: 80px;
     }
     h2 {
       font-size: 40px;
@@ -142,12 +170,40 @@ h3,h4, p {
     button {
       font-size: 18px;
     }
+
+    .LandingPageHeader {
+      text-align: left;
+    }
+
+    
+    .Button1, .Button2 {
+      transition: .5s ease;
+    }
+
+    .Button1:hover {
+      background-color: var(--background);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      box-shadow: 0 0 5px var(--primary);
+    }
+
+    .Button2:hover {
+      background: var(--background);
+      color: var(--secondary);
+      border: 1px solid #ffffff;
+      text-shadow: 0 0 5px var(--primary),
+                  0 0 10px var(--primary),
+                  0 0 20px var(--primary);;
+      box-shadow: 0 0 5px var(--primary),
+                  0 0 10px var(--primary),
+                  0 0 20px var(--primary);
+    }
   }
 
   /* Desktop */
   @media screen and (min-width: 1024px) {
     h1 {
-      font-size: 80px;
+      font-size: 120px;
     }
     h2 {
       font-size: 60px;
@@ -164,4 +220,9 @@ h3,h4, p {
     button {
       font-size: 20px;
     }
+
+    .LandingPageHeader {
+      text-align: center;
+    }
+
   }
