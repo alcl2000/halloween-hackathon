@@ -1,40 +1,50 @@
+:root {
+  --primary: #F27935;
+  --secondary: #FEDEAF;
+  --background: #241720;
+}
+
 .Row {
     height: calc(100vh - 81px);
+    border: none;
   }
+
   .Input {
-    background: #241720;
-    border: 1px solid #f0f1f9;
+    background: var(--secondary);
+    border: 1px solid var(--secondary);
     box-sizing: border-box;
-    border-radius: 2px;
-    color: #7177a1;
-    text-align: center;
+    border-radius: 8px;
+    text-align: left;
     padding: 10px;
   }
   
-  .Header {
+  /* .Header {
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
     line-height: 19px;
     text-align: center;
+    padding-bottom: 8px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #2142b2;
-  }
-  
+    color: var(--primary);
+  } */
+
   .Link {
     text-decoration: none;
     text-align: center;
     display: block;
     margin: auto;
+    padding: 8px;
   }
   
   .Link span {
-    color: #ff9254;
+    color: var(--primary);
   }
   
   .Container {
-    padding: 30px 10px;
+    padding: 0px 10px;
+    display: block;
+    text-align: center;
   }
   
   .SignInCol {
@@ -43,4 +53,20 @@
   
   .SignUpCol {
     height: 375px;
+  }
+
+  /* Mobile */
+  @media screen and (min-width: 320px) {
+    .Header {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 19px;
+      text-align: center;
+      padding-bottom: 16px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+
   }

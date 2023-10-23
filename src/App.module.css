@@ -1,7 +1,10 @@
+@import './styles/fonts.css';
+@import './styles/globalcolors.css';
+
 .App {
     min-height: 100vh;
-    background-color: #1b0721;
-    color: #F27B35;
+    background-color: var(--background);
+    color: var(--primary);
   }
   
   * {
@@ -10,6 +13,7 @@
 
 h1, h2 {
   font-family: 'Creepster', sans-serif;
+  color: var(--primary);
 }
 
 h3,h4, p {
@@ -20,39 +24,39 @@ h3,h4, p {
     padding-top: 81px;
   }
   
-  /* a {
-    color: #7a7a7a;
-  } */
+  a {
+    color: var(--secondary);
+  }
   
   a:hover {
     text-decoration: none;
-    color: #000;
+    color: var(--primary);
   }
   
   i {
     vertical-align: middle;
-    color: #acacac;
+    color: var(--secondary);
     font-size: 25px;
     padding: 8px;
   }
   
   i:hover {
-    /* color: #008080; */
+    color: var(--primary);
     cursor: pointer;
     transition: color ease-in-out 0.2s;
   }
 
   .NavBar {
-    background-color: #241720;
-    border: 1px solid #241720;
+    background-color: var(--background);
+    border: 1px solid var(--background);
   }
-  
+
   .NavLink {
     padding: 5px;
   }
-  
-  .Active i {
-    color: #ff9d00;
+
+  .Active span, .Active i {
+    color: var(--primary);
   }
 
   .Content {
@@ -95,4 +99,132 @@ h3,h4, p {
   }
   *::-webkit-scrollbar-thumb:hover {
     background: #555;
+  }
+
+  /* Mobile */
+  @media screen and (min-width: 320px) {
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 20px;
+      padding: 0 0 16px 0;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+    button {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    .LandingPageHeader {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .Button1 {
+      background-color: var(--secondary);
+      color: var(--background);
+      padding: 10px 20px;
+      border: 1px solid var(--secondary);
+      border-radius: 8px;
+      margin: 16px 8px;
+    }
+
+    .Button2 {
+      background-color: transparent;
+      color: var(--secondary);
+      border: 1px solid var(--secondary);
+      padding: 10px 20px;
+      border: 1px solid var(--secondary);
+      border-radius: 8px;
+      margin: 16px 8px;
+    }
+  }
+
+  /* Tablet */
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 80px;
+      text-shadow: 1.5px 1.5px var(--secondary);
+    }
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 14px;
+    }
+    button {
+      font-size: 18px;
+    }
+
+    .LandingPageHeader {
+      text-align: left;
+    }
+
+    
+    .Button1, .Button2 {
+      transition: .5s ease;
+    }
+
+    .Button1:hover {
+      background-color: var(--background);
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      box-shadow: 0 0 5px var(--primary);
+    }
+
+    .Button2:hover {
+      background: var(--background);
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      text-shadow: 0 0 5px var(--primary),
+                  0 0 10px var(--primary),
+                  0 0 20px var(--primary);;
+      box-shadow: 0 0 5px var(--primary),
+                  0 0 10px var(--primary),
+                  0 0 20px var(--primary);
+    }
+  }
+
+  /* Desktop */
+  @media screen and (min-width: 1024px) {
+    h1 {
+      font-size: 120px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+    h3 {
+      font-size: 40px;
+    }
+    h4 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+    button {
+      font-size: 20px;
+    }
+
+    .LandingPageHeader {
+      text-align: center;
+    }
+
   }

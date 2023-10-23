@@ -66,14 +66,14 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/signin"
       >
-        <i className="fas fa-sign-in-alt"></i>Sign in
+        <span><i className="fas fa-sign-in-alt"></i>Sign in</span>
       </NavLink>
       <NavLink
         to="/signup"
         className={styles.NavLink}
         activeClassName={styles.Active}
       >
-        <i className="fas fa-user-plus"></i>Sign up
+        <span><i className="fas fa-user-plus"></i>Sign up</span>
       </NavLink>
     </>
   );
@@ -103,11 +103,26 @@ const NavBar = () => {
               exact
               className={styles.NavLink}
               activeClassName={styles.Active}
+              to="/feed"
+            >
+              <span><i className="fas fa-ghost"></i>Main Feed</span>
+            </NavLink>
+            <NavLink
+              exact
+              className={styles.NavLink}
+              activeClassName={styles.Active}
               to="/"
             >
-              <i className="fas fa-home"></i>Home
+              <span><i className="fas fa-portrait"></i>Upload Image</span>
             </NavLink>
-
+            <NavLink
+              exact
+              className={styles.NavLink}
+              activeClassName={styles.Active}
+              to="/liked"
+            >
+              <span><i className="fas fa-bookmark"></i>Favourites</span>
+            </NavLink>
             {currentUser ? loggedInIcons : loggedOutIcons}
           </Nav>
         </Navbar.Collapse>

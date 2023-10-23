@@ -11,17 +11,12 @@ import default3 from "../../assets/default3.png";
 import default4 from "../../assets/default4.png";
 
 import {
-  Form,
-  Button,
-  Image,
-  Col,
-  Row,
-  Container,
-  Alert,
-} from "react-bootstrap";
+  Form, Button, Image, Col, Row, Container, Alert } from "react-bootstrap";
 import axios from "axios";
+import { useRedirect } from "../../hooks/useRedirect";
 
 const SignUpForm = () => {
+  useRedirect("loggedIn");
   const [signUpData, setSignUpData] = useState({
     username: "",
     password1: "",
@@ -50,11 +45,29 @@ const SignUpForm = () => {
     }
   };
 
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [fileURL, setFileURL] = useState(null);  // Defining setFileURL and fileURL here
+
+  const handleFileInput = (event) => {
+    const file = event.target.files[0];
+    setSelectedFile(file);
+    if (file) {
+      setFileURL(URL.createObjectURL(file));  // Create a URL for the selected file
+    }
+  };
+
+
   return (
     <Row className={styles.Row}>
       <Col className="my-auto py-2 p-md-2" md={6}>
         <Container className={`${appStyles.Content} p-4 `}>
-        <h1 className={styles.Header}>Create Account</h1> {/* New H1 element */}
+        <h2 className={styles.Header}>Create Account</h2> {/* New H1 element */}
+
+          {fileURL && (
+            <div className="text-center mb-4">
+              <Image src={fileURL} alt="Uploaded" thumbnail />
+            </div>
+          )}
           
           <table className="mb-4" style={{ width: '100%', textAlign: 'center' }}>
             <tr>
@@ -62,7 +75,8 @@ const SignUpForm = () => {
                 <div>
                   <i className="fa fa-upload" aria-hidden="true"></i>
                   <br />
-                  <button>Upload Picture</button>
+                  <input type="file" id="fileInput" onChange={handleFileInput} style={{display: 'none'}} />
+                  <label htmlFor="fileInput" className={btnStyles.uploadButton}>Upload Picture</label>
                 </div>
               </td>
               <td>
@@ -86,7 +100,7 @@ const SignUpForm = () => {
             </tr>
           </table>
 
-          <h1 className={styles.Header}>sign up</h1>
+          <h2 className={styles.Header}>sign up</h2>
 
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="username">
@@ -160,17 +174,10 @@ const SignUpForm = () => {
           </Link>
         </Container>
       </Col>
-      <Col
-        md={6}
-        className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}
-      >
-        <Image
-          className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero2.jpg"}
-        />
-      </Col>
     </Row>
   );
 };
+
+
 
 export default SignUpForm;
