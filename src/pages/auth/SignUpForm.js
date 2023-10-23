@@ -45,7 +45,7 @@ const SignUpForm = () => {
     }
   };
 
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [setSelectedFile] = useState(null);
 
   const [fileURL, setFileURL] = useState(null);  // Defining setFileURL and fileURL here
 

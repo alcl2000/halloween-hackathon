@@ -4,6 +4,8 @@ import styles from "../App.module.css";
 import { NavLink } from "react-router-dom";
 import { useCurrentUser, useSetCurrentUser } from "../contexts/CurrentUserContext";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle"
+import navbarStyles from '../styles/Navbar.module.css'
+
 
 import Avatar from "./Avatar";
 import axios from "axios";
@@ -97,6 +99,7 @@ const NavBar = () => {
           ref={ref}
           onClick={() => setExpanded(!expanded)}
           aria-controls="basic-navbar-nav"
+          className={`${navbarStyles['custom-toggler-icon']}`}
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto text-left">
